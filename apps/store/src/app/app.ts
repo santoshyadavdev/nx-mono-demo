@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { AsyncPipe } from '@angular/common';
+import { CartService } from '@nx-ecom-app/data-access';
+import { NavbarComponent } from '@nx-ecom-app/design-system';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, AsyncPipe, NavbarComponent],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'store';
+  cartService = inject(CartService);
 }

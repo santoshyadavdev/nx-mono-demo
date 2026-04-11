@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-ecom-app/design-system": ["libs/design-system/src/index.ts"],
+      "@nx-ecom-app/data-access": ["libs/data-access/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

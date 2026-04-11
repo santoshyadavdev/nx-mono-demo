@@ -59,7 +59,8 @@
           "buildTarget": "store:build:production"
         },
         "development": {
-          "buildTarget": "store:build:development"
+          "buildTarget": "store:build:development",
+          "proxyConfig": "apps/store/proxy.conf.json"
         }
       },
       "defaultConfiguration": "development"

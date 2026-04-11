@@ -1,0 +1,4 @@
+rootProject.name = 'nx-ecom-app'
+
+include('apps:api')
+project(':apps:api').projectDir = file('apps/api')
