@@ -8,6 +8,7 @@ export * from './lib/models/order.model';
 export * from './lib/services/product.service';
 export * from './lib/services/cart.service';
 export * from './lib/services/api-cart.service';
+export * from './lib/services/checkout.service';
 
 // Product Store
 export * from './lib/store/product/product.actions';
