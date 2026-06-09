@@ -23,5 +23,19 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./pages/cart/cart.page').then((m) => m.CartPageComponent),
   },
+  {
+    path: 'checkout',
+    loadComponent: () =>
+      import('./pages/checkout/checkout.page').then(
+        (m) => m.CheckoutPageComponent
+      ),
+  },
+  {
+    path: 'order-confirmation',
+    loadComponent: () =>
+      import('./pages/order-confirmation/order-confirmation.page').then(
+        (m) => m.OrderConfirmationPageComponent
+      ),
+  },
   { path: '**', redirectTo: '' },
 ];
