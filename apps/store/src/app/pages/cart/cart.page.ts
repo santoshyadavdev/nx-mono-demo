@@ -53,7 +53,8 @@ import { ButtonComponent } from '@nx-ecom-app/design-system';
             <strong>Total</strong>
             <strong>\${{ cartService.total$ | async | number: '1.2-2' }}</strong>
           </div>
-          <ds-button variant="primary" size="lg" style="width:100%; margin-top:1rem">
+          <ds-button variant="primary" size="lg" style="width:100%; margin-top:1rem"
+            routerLink="/checkout">
             Checkout
           </ds-button>
           <ds-button variant="ghost" size="sm" (click)="cartService.clearCart()"
